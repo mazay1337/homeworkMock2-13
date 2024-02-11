@@ -52,4 +52,5 @@ public class Employee {
         return String.format("Сотрудник: %s %s из отдела № %d с зарплатой %d",
                 lastName, firstName, departmentId,salary);
     }
+
 }

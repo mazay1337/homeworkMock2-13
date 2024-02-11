@@ -23,4 +23,5 @@ public class EmployeeExistsException extends RuntimeException{
     public EmployeeExistsException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
         super(message, cause, enableSuppression, writableStackTrace);
     }
+
 }

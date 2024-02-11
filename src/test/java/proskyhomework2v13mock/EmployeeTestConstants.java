@@ -24,4 +24,5 @@ public class EmployeeTestConstants {
     public static final Set<Employee> DIFFRENT_DEPARTMENT_EMPLOYEES = Set.of(MIN_SALARY_EMPLOYEE, DIFFRENT_DEPARTMENT_EMPLOYEE);
     public static final Map<Integer, List<Employee>> DEPARTMENT_MAP = DIFFRENT_DEPARTMENT_EMPLOYEES.stream()
             .collect(groupingBy(Employee::getDepartmentId));
+
 }
