@@ -14,7 +14,6 @@ import java.util.Map;
 @RestController
 @RequestMapping(path = "/departments")
 public class DepartmentController {
-
     private final DepartmentService departmentService;
 
     public DepartmentController(DepartmentService departmentService) {

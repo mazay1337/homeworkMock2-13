@@ -73,7 +73,6 @@ class EmployeeServiceImplTest {
 
         assertThrows(EmployeeNotFoundException.class, () -> out.remove(FIRST_NAME, LAST_NAME));
     }
-
     @Test
     public void shouldReturnEmptyCollectionWhenEmployeesDontExist() {
         assertIterableEquals(emptyList(), out.findAll());
