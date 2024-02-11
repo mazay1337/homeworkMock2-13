@@ -83,5 +83,4 @@ class DepartmentServiceImplTest {
         when(employeeService.findAll()).thenReturn(EMPLOYEES);
         assertEquals(emptyList(), out.findEmployeesByDepartment(BAD_DEPARTMENT_ID));
     }
-
 }
