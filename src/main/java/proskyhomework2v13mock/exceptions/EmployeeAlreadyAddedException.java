@@ -10,6 +10,5 @@ public class EmployeeAlreadyAddedException extends RuntimeException{
     }
 
     public EmployeeAlreadyAddedException() {
-
     }
 }

@@ -50,7 +50,6 @@ class EmployeeServiceImplTest {
     @Test
     public void shouldThrowEmployeeNotFoundExeptionWhenFindEmployeeWichDoesntExist() {
         assertEquals(0, out.findAll().size());
-
         assertThrows(EmployeeNotFoundException.class, () -> out.find(FIRST_NAME, LAST_NAME));
     }
 
@@ -73,7 +72,6 @@ class EmployeeServiceImplTest {
 
         assertThrows(EmployeeNotFoundException.class, () -> out.remove(FIRST_NAME, LAST_NAME));
     }
-
     @Test
     public void shouldReturnEmptyCollectionWhenEmployeesDontExist() {
         assertIterableEquals(emptyList(), out.findAll());
@@ -81,8 +79,8 @@ class EmployeeServiceImplTest {
 
     @Test
     public void shouldReturnListOfEmployeesWhenTheyExist() {
-        Employee employee1 = out.add(FIRST_NAME, LAST_NAME, SALARY, DEPARTMENT_ID);
-        Employee employee2 = out.add(FIRST_NAME2, LAST_NAME2, SALARY, DEPARTMENT_ID);
+        Employee employee1 = out.add(FIRST_NAME2, LAST_NAME2, SALARY, DEPARTMENT_ID);
+        Employee employee2 = out.add(FIRST_NAME, LAST_NAME, SALARY, DEPARTMENT_ID);
         Collection<Employee> expected = List.of(employee1, employee2);
 
         Collection<Employee> actual = out.findAll();
